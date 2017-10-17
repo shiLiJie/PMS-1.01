@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCLFormVc">
+            <connections>
+                <outlet property="sclTab" destination="Plw-UZ-Nv3" id="MJ4-NW-Boj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Plw-UZ-Nv3">
+                    <rect key="frame" x="30" y="70" width="964" height="628"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条，然后根据最近一星期以内下述情况影响您的实际感觉，在每个问题后标明该题的程度得分。其中，“没有”选1，“很轻”选2，“中等”选3，“偏重”选4，“严重”选5。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMv-yQ-bEq">
+                    <rect key="frame" x="30" y="49.5" width="964" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqP-pP-8Rs">
+                    <rect key="frame" x="909" y="708" width="85" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="OYd-ec-ssy"/>
+                        <constraint firstAttribute="height" constant="55" id="wyB-E6-HZQ"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="commit:" destination="-1" eventType="touchUpInside" id="gGe-O7-iYM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qqP-pP-8Rs" firstAttribute="trailing" secondItem="Plw-UZ-Nv3" secondAttribute="trailing" id="3En-tc-OFP"/>
+                <constraint firstItem="Plw-UZ-Nv3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HgY-Lx-thH"/>
+                <constraint firstItem="GMv-yQ-bEq" firstAttribute="leading" secondItem="Plw-UZ-Nv3" secondAttribute="leading" id="N23-DU-APJ"/>
+                <constraint firstItem="qqP-pP-8Rs" firstAttribute="top" secondItem="Plw-UZ-Nv3" secondAttribute="bottom" constant="10" id="Xiq-Kh-JZ1"/>
+                <constraint firstItem="Plw-UZ-Nv3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZjB-FU-Qke"/>
+                <constraint firstItem="Plw-UZ-Nv3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="bZt-ao-eG2"/>
+                <constraint firstItem="Plw-UZ-Nv3" firstAttribute="top" secondItem="GMv-yQ-bEq" secondAttribute="bottom" id="j6C-vG-pmy"/>
+                <constraint firstItem="GMv-yQ-bEq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="49.5" id="nmi-GK-dTY"/>
+                <constraint firstItem="GMv-yQ-bEq" firstAttribute="centerX" secondItem="Plw-UZ-Nv3" secondAttribute="centerX" id="qb5-lv-m7K"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

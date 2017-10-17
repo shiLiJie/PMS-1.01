@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XihaoVc">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="xihaoTable" destination="JIr-0x-SOL" id="eoI-04-9DE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音乐喜好调查" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ7-D4-LLW">
+                    <rect key="frame" x="445.5" y="50" width="134" height="26.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JIr-0x-SOL">
+                    <rect key="frame" x="50" y="96.5" width="924" height="601.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbM-o6-oqS">
+                    <rect key="frame" x="889" y="698" width="85" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="3Dc-Zi-9QR"/>
+                        <constraint firstAttribute="height" constant="55" id="jta-bE-cD8"/>
+                    </constraints>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="sureBtnClick:" destination="-1" eventType="touchUpInside" id="zLv-2q-AL2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cbM-o6-oqS" firstAttribute="trailing" secondItem="JIr-0x-SOL" secondAttribute="trailing" id="C8Q-37-ELh"/>
+                <constraint firstItem="cbM-o6-oqS" firstAttribute="top" secondItem="JIr-0x-SOL" secondAttribute="bottom" id="Lnz-6K-EUk"/>
+                <constraint firstItem="wZ7-D4-LLW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="XiR-QV-w9p"/>
+                <constraint firstItem="JIr-0x-SOL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="iuP-hA-wz7"/>
+                <constraint firstAttribute="bottom" secondItem="JIr-0x-SOL" secondAttribute="bottom" constant="70" id="lYZ-ST-Pu7"/>
+                <constraint firstAttribute="trailing" secondItem="JIr-0x-SOL" secondAttribute="trailing" constant="50" id="m4E-nX-20A"/>
+                <constraint firstItem="JIr-0x-SOL" firstAttribute="top" secondItem="wZ7-D4-LLW" secondAttribute="bottom" constant="20" id="noH-X6-8Da"/>
+                <constraint firstItem="wZ7-D4-LLW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wNu-jg-BIB"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

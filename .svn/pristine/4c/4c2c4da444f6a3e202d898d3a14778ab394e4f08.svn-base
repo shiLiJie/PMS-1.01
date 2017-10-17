@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>5.1.mp3</key>
+	<array>
+		<string>5.2.mp3</string>
+	</array>
+	<key>1.1.mp3</key>
+	<array>
+		<string>1.2.mp3</string>
+		<string>山村夜色（夜之声）60-1khz,26分钟.mp3</string>
+		<string>睡眠音乐-茉莉飘香.mp3</string>
+	</array>
+	<key>摇篮曲（二胡，小提琴）48-2khz，25分钟.mp3</key>
+	<array>
+		<string>山村夜色（夜之声）60-1khz,26分钟.mp3</string>
+	</array>
+	<key>茉莉飘香（古琴、弦乐）65.41-2khz，24分钟.mp3</key>
+	<array>
+		<string>鸟语山林(森林之声)550-4khz，24分钟.mp3</string>
+		<string>溪流鸟语（水之声）50-2khz，22分钟.mp3</string>
+	</array>
+	<key>秘境禅心（二胡、箫）48-2khz，26分钟.mp3</key>
+	<array>
+		<string>鸟语山林(森林之声)550-4khz，24分钟.mp3</string>
+		<string>溪流鸟语（水之声）50-2khz，22分钟.mp3</string>
+	</array>
+	<key>第一缕阳光(双簧管，弦乐)65.41-2khz,25分钟.mp3</key>
+	<array>
+		<string>茉莉飘香（古琴、弦乐）65.41-2khz，5分钟.mp3</string>
+	</array>
+	<key>座头鲸的歌声（长笛，钢琴）32-2khz，21分钟.mp3</key>
+	<array>
+		<string>海与座头鲸（海洋之声）30-1khz，24分钟.mp3</string>
+		<string>海与座头鲸（海洋之声）40-1khz,24分钟.mp3</string>
+	</array>
+	<key>海的呢喃（钢琴）43.65-1.3khz，24分钟.mp3</key>
+	<array>
+		<string>海声（海洋之声）25-1khz，25分钟.mp3</string>
+		<string>海声（海洋之声）40-1khz，25分钟.mp3</string>
+	</array>
+	<key>雨的梦（双簧管，小提琴）48-2kh，25分钟.mp3</key>
+	<array>
+		<string>雨声（水之声）40-2khz，20分钟.mp3</string>
+		<string>雨声（水之声）59-2khz，20分钟.mp3</string>
+	</array>
+	<key>海的呢喃（人声，钢琴）43.65-1.3khz，18分钟.mp3</key>
+	<array>
+		<string>海声（海洋之声）35-1khz，25分钟.mp3</string>
+	</array>
+	<key>听雨的孩子（箫，大提琴）48-2khz，25分钟.mp3</key>
+	<array>
+		<string>雨声（水之声）40hz-3khz，20分钟.mp3</string>
+		<string>雨声（水之声）50-2khz,20分钟.mp3</string>
+	</array>
+	<key>瓦尔登湖（人声，合成器）65.41-2khz，26分钟.mp3</key>
+	<array>
+		<string>夜虫（夜之声）724-4khz，24分钟.mp3</string>
+	</array>
+</dict>
+</plist>

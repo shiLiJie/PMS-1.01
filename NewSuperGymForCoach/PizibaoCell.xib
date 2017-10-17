@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 近1个月，晚上上床睡觉通常（          ）点钟。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plv-C4-Wa6">
+                        <rect key="frame" x="28" y="11" width="362.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXC-E9-Wct">
+                        <rect key="frame" x="276" y="8" width="46" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Plv-C4-Wa6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Wzv-EH-xHr"/>
+                    <constraint firstItem="Plv-C4-Wa6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aCE-cg-M00"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="four1" destination="GJA-qa-hYY" id="AeS-0Y-iXJ"/>
+                <outlet property="four2" destination="SCE-MU-deA" id="iTp-UY-x8p"/>
+                <outlet property="four3" destination="1B8-rN-DgW" id="1o9-iH-hNT"/>
+                <outlet property="four4" destination="wZv-ZE-h0C" id="Kb5-On-9cy"/>
+                <outlet property="fourText" destination="bLx-C0-SAO" id="Bcn-6A-nlO"/>
+                <outlet property="one1" destination="YjY-rA-7xQ" id="z6L-kL-BHj"/>
+                <outlet property="one2" destination="MWr-wD-aG5" id="Y0n-4G-Jbe"/>
+                <outlet property="one3" destination="2DP-KD-ZMh" id="YqL-G4-WF4"/>
+                <outlet property="one4" destination="jJk-HC-lhb" id="181-Vi-9L2"/>
+                <outlet property="oneText" destination="GXC-E9-Wct" id="91Q-FW-KGm"/>
+                <outlet property="three1" destination="Ffr-Tt-k5v" id="vtc-wW-msR"/>
+                <outlet property="three2" destination="IZj-Nd-Lh5" id="2h7-Jk-HhP"/>
+                <outlet property="three3" destination="XGz-rr-vnv" id="GHl-7i-ays"/>
+                <outlet property="three4" destination="qdj-V7-ovx" id="ICr-RW-3Hi"/>
+                <outlet property="threeText" destination="pXh-pp-yRn" id="6jg-dV-Cgt"/>
+                <outlet property="two1" destination="X6v-uD-BcD" id="57O-ru-e4V"/>
+                <outlet property="two2" destination="aAS-yi-d5O" id="L3s-xI-WlE"/>
+                <outlet property="two3" destination="y7g-RK-Cpu" id="p8X-h3-OAr"/>
+                <outlet property="two4" destination="SLA-Ry-8Yw" id="qgv-Bh-oQi"/>
+                <outlet property="twoText" destination="8yo-Lp-ZSE" id="mdQ-PZ-lce"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="-92"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KRs-sK-CJA" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KRs-sK-CJA" id="Tt1-oX-K7F">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 近1个月，从上床到入睡通常需要（          ）分钟。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22I-tJ-rA5">
+                        <rect key="frame" x="28" y="11" width="399.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8yo-Lp-ZSE">
+                        <rect key="frame" x="313" y="8" width="46" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="22I-tJ-rA5" firstAttribute="centerY" secondItem="Tt1-oX-K7F" secondAttribute="centerY" id="10Y-M4-gss"/>
+                    <constraint firstItem="22I-tJ-rA5" firstAttribute="leading" secondItem="Tt1-oX-K7F" secondAttribute="leadingMargin" constant="20" id="rEN-IJ-gXa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="-8"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="27m-PI-V2Z" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="27m-PI-V2Z" id="wcg-5F-IG3">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 近1个月，通常早上（          ）点起床" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjk-3N-baF">
+                        <rect key="frame" x="28" y="11" width="296" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pXh-pp-yRn">
+                        <rect key="frame" x="209" y="8" width="46" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yjk-3N-baF" firstAttribute="centerY" secondItem="wcg-5F-IG3" secondAttribute="centerY" id="4qP-uB-k4i"/>
+                    <constraint firstItem="yjk-3N-baF" firstAttribute="leading" secondItem="wcg-5F-IG3" secondAttribute="leadingMargin" constant="20" id="cDh-lc-ej3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="76"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rXe-sf-bIr" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rXe-sf-bIr" id="DUj-Nb-BFX">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. 近1个月，每夜通常实际睡眠（          ）小时(不等于卧床时间)。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p51-M6-4EA">
+                        <rect key="frame" x="28" y="11" width="498" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLx-C0-SAO">
+                        <rect key="frame" x="278" y="8" width="47" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p51-M6-4EA" firstAttribute="leading" secondItem="DUj-Nb-BFX" secondAttribute="leadingMargin" constant="20" id="sYi-A1-x73"/>
+                    <constraint firstItem="p51-M6-4EA" firstAttribute="centerY" secondItem="DUj-Nb-BFX" secondAttribute="centerY" id="sjf-kr-G6T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="163"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nLP-L2-1Te" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nLP-L2-1Te" id="KnI-Fa-l0k">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. 近1个月 ，因下列情况影响睡眠而烦恼：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-z6-xEd">
+                        <rect key="frame" x="28" y="11" width="326" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Yr-z6-xEd" firstAttribute="centerY" secondItem="KnI-Fa-l0k" secondAttribute="centerY" id="HUy-CM-Bxg"/>
+                    <constraint firstItem="0Yr-z6-xEd" firstAttribute="leading" secondItem="KnI-Fa-l0k" secondAttribute="leadingMargin" constant="20" id="rIl-ex-uH1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="250"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bjz-aB-sUN" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bjz-aB-sUN" id="80d-Ug-OWD">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaa. 入睡困难(30分钟内不能入睡)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0Y-kj-2XX">
+                        <rect key="frame" x="28" y="11" width="259" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6r-qg-Q07">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                        <state key="selected">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="fourClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vRp-uJ-iwe"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBR-vg-c6s">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                        <connections>
+                            <action selector="threeClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="92m-JO-30L"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsT-cJ-zYf">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                        <connections>
+                            <action selector="twoClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S2a-e6-DPw"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSI-KA-c0i">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                        <connections>
+                            <action selector="oneClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BRK-HN-tSb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P6r-qg-Q07" firstAttribute="centerY" secondItem="80d-Ug-OWD" secondAttribute="centerY" id="FLb-tV-2tE"/>
+                    <constraint firstItem="m0Y-kj-2XX" firstAttribute="centerY" secondItem="80d-Ug-OWD" secondAttribute="centerY" id="KXZ-2y-VMl"/>
+                    <constraint firstItem="fsT-cJ-zYf" firstAttribute="leading" secondItem="aSI-KA-c0i" secondAttribute="trailing" constant="50" id="PdE-4L-F5T"/>
+                    <constraint firstItem="m0Y-kj-2XX" firstAttribute="leading" secondItem="80d-Ug-OWD" secondAttribute="leadingMargin" constant="20" id="Siz-bD-khq"/>
+                    <constraint firstItem="sBR-vg-c6s" firstAttribute="centerY" secondItem="P6r-qg-Q07" secondAttribute="centerY" id="Wp4-C2-PKx"/>
+                    <constraint firstAttribute="trailing" secondItem="P6r-qg-Q07" secondAttribute="trailing" constant="30" id="eMF-zr-phc"/>
+                    <constraint firstItem="sBR-vg-c6s" firstAttribute="leading" secondItem="fsT-cJ-zYf" secondAttribute="trailing" constant="50" id="gB7-M8-pHj"/>
+                    <constraint firstItem="aSI-KA-c0i" firstAttribute="centerY" secondItem="fsT-cJ-zYf" secondAttribute="centerY" id="lBu-lG-gPX"/>
+                    <constraint firstItem="P6r-qg-Q07" firstAttribute="leading" secondItem="sBR-vg-c6s" secondAttribute="trailing" constant="50" id="otg-qU-ltN"/>
+                    <constraint firstItem="fsT-cJ-zYf" firstAttribute="centerY" secondItem="sBR-vg-c6s" secondAttribute="centerY" id="uRL-Th-bWc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="336"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MUY-Aj-Ocf" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MUY-Aj-Ocf" id="OL7-KG-hnF">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="b. 夜间易醒或早醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqc-ja-xFu">
+                        <rect key="frame" x="28" y="11" width="141" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnh-v9-oJk">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBT-Mz-TEg">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQi-jb-0yW">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcJ-MY-P4W">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tnh-v9-oJk" firstAttribute="leading" secondItem="kBT-Mz-TEg" secondAttribute="trailing" constant="50" id="478-0U-qvT"/>
+                    <constraint firstItem="Oqc-ja-xFu" firstAttribute="centerY" secondItem="OL7-KG-hnF" secondAttribute="centerY" id="5Je-Nb-mRe"/>
+                    <constraint firstItem="tnh-v9-oJk" firstAttribute="centerY" secondItem="OL7-KG-hnF" secondAttribute="centerY" id="6Fx-IW-vm6"/>
+                    <constraint firstItem="kBT-Mz-TEg" firstAttribute="leading" secondItem="XQi-jb-0yW" secondAttribute="trailing" constant="50" id="ERQ-c0-QO2"/>
+                    <constraint firstAttribute="trailing" secondItem="tnh-v9-oJk" secondAttribute="trailing" constant="30" id="KAT-d0-X41"/>
+                    <constraint firstItem="XQi-jb-0yW" firstAttribute="leading" secondItem="gcJ-MY-P4W" secondAttribute="trailing" constant="50" id="f2l-qD-gJo"/>
+                    <constraint firstItem="XQi-jb-0yW" firstAttribute="centerY" secondItem="kBT-Mz-TEg" secondAttribute="centerY" id="iuT-OQ-fWS"/>
+                    <constraint firstItem="gcJ-MY-P4W" firstAttribute="centerY" secondItem="XQi-jb-0yW" secondAttribute="centerY" id="sJF-aH-Lp5"/>
+                    <constraint firstItem="Oqc-ja-xFu" firstAttribute="leading" secondItem="OL7-KG-hnF" secondAttribute="leadingMargin" constant="20" id="xUo-Wa-WFp"/>
+                    <constraint firstItem="kBT-Mz-TEg" firstAttribute="centerY" secondItem="tnh-v9-oJk" secondAttribute="centerY" id="ywO-Eb-49r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="413"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tjx-R9-pYv" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tjx-R9-pYv" id="OrW-Ml-nKu">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="c. 夜间去厕所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wq-tU-3pd">
+                        <rect key="frame" x="28" y="11" width="105" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-Mt-g8O">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-QG-3OE">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRg-eC-EZ1">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eA8-gf-80y">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Wq-tU-3pd" firstAttribute="leading" secondItem="OrW-Ml-nKu" secondAttribute="leadingMargin" constant="20" id="043-io-Nhs"/>
+                    <constraint firstItem="1pc-Mt-g8O" firstAttribute="leading" secondItem="o9m-QG-3OE" secondAttribute="trailing" constant="50" id="6SB-7I-9fj"/>
+                    <constraint firstItem="JRg-eC-EZ1" firstAttribute="leading" secondItem="eA8-gf-80y" secondAttribute="trailing" constant="50" id="6Uv-9Z-crV"/>
+                    <constraint firstItem="eA8-gf-80y" firstAttribute="centerY" secondItem="JRg-eC-EZ1" secondAttribute="centerY" id="Gxn-RI-V8G"/>
+                    <constraint firstItem="1pc-Mt-g8O" firstAttribute="centerY" secondItem="OrW-Ml-nKu" secondAttribute="centerY" id="VX1-rA-RxM"/>
+                    <constraint firstItem="o9m-QG-3OE" firstAttribute="leading" secondItem="JRg-eC-EZ1" secondAttribute="trailing" constant="50" id="ecK-5G-BN6"/>
+                    <constraint firstItem="o9m-QG-3OE" firstAttribute="centerY" secondItem="1pc-Mt-g8O" secondAttribute="centerY" id="gfb-oU-JCd"/>
+                    <constraint firstItem="JRg-eC-EZ1" firstAttribute="centerY" secondItem="o9m-QG-3OE" secondAttribute="centerY" id="gvu-aX-dGI"/>
+                    <constraint firstAttribute="trailing" secondItem="1pc-Mt-g8O" secondAttribute="trailing" constant="30" id="oTU-Mc-Sk8"/>
+                    <constraint firstItem="4Wq-tU-3pd" firstAttribute="centerY" secondItem="OrW-Ml-nKu" secondAttribute="centerY" id="u0b-22-aPg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="496"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6UZ-1U-JLI" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6UZ-1U-JLI" id="kH6-FR-iBk">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="d. 呼吸不畅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bK-kc-JZd">
+                        <rect key="frame" x="28" y="11" width="89" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NU9-X4-wkA">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuw-3E-wqo">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCS-Xf-yId">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N68-Mg-awo">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5bK-kc-JZd" firstAttribute="leading" secondItem="kH6-FR-iBk" secondAttribute="leadingMargin" constant="20" id="4Rh-ay-brJ"/>
+                    <constraint firstItem="N68-Mg-awo" firstAttribute="centerY" secondItem="fCS-Xf-yId" secondAttribute="centerY" id="Qmh-oC-aUD"/>
+                    <constraint firstItem="fCS-Xf-yId" firstAttribute="leading" secondItem="N68-Mg-awo" secondAttribute="trailing" constant="50" id="W52-kv-eJe"/>
+                    <constraint firstItem="fCS-Xf-yId" firstAttribute="centerY" secondItem="kuw-3E-wqo" secondAttribute="centerY" id="fIZ-qM-hEA"/>
+                    <constraint firstItem="kuw-3E-wqo" firstAttribute="leading" secondItem="fCS-Xf-yId" secondAttribute="trailing" constant="50" id="h32-9f-JZT"/>
+                    <constraint firstItem="NU9-X4-wkA" firstAttribute="leading" secondItem="kuw-3E-wqo" secondAttribute="trailing" constant="50" id="jrr-rE-qyc"/>
+                    <constraint firstItem="5bK-kc-JZd" firstAttribute="centerY" secondItem="kH6-FR-iBk" secondAttribute="centerY" id="jvg-Ti-wpe"/>
+                    <constraint firstItem="NU9-X4-wkA" firstAttribute="centerY" secondItem="kH6-FR-iBk" secondAttribute="centerY" id="l3F-cC-8Kf"/>
+                    <constraint firstAttribute="trailing" secondItem="NU9-X4-wkA" secondAttribute="trailing" constant="30" id="ndr-Q0-znm"/>
+                    <constraint firstItem="kuw-3E-wqo" firstAttribute="centerY" secondItem="NU9-X4-wkA" secondAttribute="centerY" id="zsJ-Mv-jml"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="575"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VYf-RS-jzK" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VYf-RS-jzK" id="428-Ly-l6B">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e. 咳嗽或鼾声高" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKw-W3-T42">
+                        <rect key="frame" x="28" y="11" width="123" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLN-o1-sLq">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N7-bh-GBo">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-Cg-syD">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeW-iu-d95">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vKw-W3-T42" firstAttribute="leading" secondItem="428-Ly-l6B" secondAttribute="leadingMargin" constant="20" id="3KX-pA-xDW"/>
+                    <constraint firstItem="8SF-Cg-syD" firstAttribute="leading" secondItem="TeW-iu-d95" secondAttribute="trailing" constant="50" id="508-52-QIV"/>
+                    <constraint firstItem="1N7-bh-GBo" firstAttribute="centerY" secondItem="OLN-o1-sLq" secondAttribute="centerY" id="DDj-hf-Ekz"/>
+                    <constraint firstAttribute="trailing" secondItem="OLN-o1-sLq" secondAttribute="trailing" constant="30" id="HRZ-tO-YvP"/>
+                    <constraint firstItem="1N7-bh-GBo" firstAttribute="leading" secondItem="8SF-Cg-syD" secondAttribute="trailing" constant="50" id="LeB-Kb-Tb4"/>
+                    <constraint firstItem="TeW-iu-d95" firstAttribute="centerY" secondItem="8SF-Cg-syD" secondAttribute="centerY" id="PWh-VC-fS2"/>
+                    <constraint firstItem="vKw-W3-T42" firstAttribute="centerY" secondItem="428-Ly-l6B" secondAttribute="centerY" id="fDK-BJ-3RN"/>
+                    <constraint firstItem="OLN-o1-sLq" firstAttribute="centerY" secondItem="428-Ly-l6B" secondAttribute="centerY" id="fk4-Kv-kVc"/>
+                    <constraint firstItem="OLN-o1-sLq" firstAttribute="leading" secondItem="1N7-bh-GBo" secondAttribute="trailing" constant="50" id="kAx-2C-2kd"/>
+                    <constraint firstItem="8SF-Cg-syD" firstAttribute="centerY" secondItem="1N7-bh-GBo" secondAttribute="centerY" id="nQB-kc-Vlq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="656"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Myz-XA-qup" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Myz-XA-qup" id="NQO-hu-gA7">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f. 感觉冷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s24-H4-V9j">
+                        <rect key="frame" x="28" y="11" width="66" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOJ-Yv-idg">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po4-Yq-h9X">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atg-Fx-GtB">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAz-1F-Uc8">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="s24-H4-V9j" firstAttribute="leading" secondItem="NQO-hu-gA7" secondAttribute="leadingMargin" constant="20" id="7hx-Ik-iyr"/>
+                    <constraint firstItem="pOJ-Yv-idg" firstAttribute="centerY" secondItem="NQO-hu-gA7" secondAttribute="centerY" id="8Kb-c6-44l"/>
+                    <constraint firstAttribute="trailing" secondItem="pOJ-Yv-idg" secondAttribute="trailing" constant="30" id="K4p-o1-gKL"/>
+                    <constraint firstItem="atg-Fx-GtB" firstAttribute="leading" secondItem="dAz-1F-Uc8" secondAttribute="trailing" constant="50" id="V9V-yE-4hD"/>
+                    <constraint firstItem="po4-Yq-h9X" firstAttribute="centerY" secondItem="pOJ-Yv-idg" secondAttribute="centerY" id="iSA-m7-ycK"/>
+                    <constraint firstItem="pOJ-Yv-idg" firstAttribute="leading" secondItem="po4-Yq-h9X" secondAttribute="trailing" constant="50" id="jkf-eE-j3j"/>
+                    <constraint firstItem="s24-H4-V9j" firstAttribute="centerY" secondItem="NQO-hu-gA7" secondAttribute="centerY" id="k5f-gh-OPV"/>
+                    <constraint firstItem="atg-Fx-GtB" firstAttribute="centerY" secondItem="po4-Yq-h9X" secondAttribute="centerY" id="u74-9G-EHc"/>
+                    <constraint firstItem="dAz-1F-Uc8" firstAttribute="centerY" secondItem="atg-Fx-GtB" secondAttribute="centerY" id="vqi-ZB-OPB"/>
+                    <constraint firstItem="po4-Yq-h9X" firstAttribute="leading" secondItem="atg-Fx-GtB" secondAttribute="trailing" constant="50" id="wZu-Rz-Vuc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="737"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Faj-ek-oZG" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Faj-ek-oZG" id="mnG-KM-u7x">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="g. 感觉热" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fal-UC-ZHH">
+                        <rect key="frame" x="28" y="11" width="72" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IL-v6-Z8M">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7V-eG-Pyw">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvv-RJ-dVn">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBe-oJ-0fX">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uvv-RJ-dVn" firstAttribute="centerY" secondItem="K7V-eG-Pyw" secondAttribute="centerY" id="G2g-tu-vDJ"/>
+                    <constraint firstItem="1IL-v6-Z8M" firstAttribute="leading" secondItem="K7V-eG-Pyw" secondAttribute="trailing" constant="50" id="Jm3-cm-Sfk"/>
+                    <constraint firstItem="uvv-RJ-dVn" firstAttribute="leading" secondItem="uBe-oJ-0fX" secondAttribute="trailing" constant="50" id="NHG-PC-L7G"/>
+                    <constraint firstAttribute="trailing" secondItem="1IL-v6-Z8M" secondAttribute="trailing" constant="30" id="Yae-9f-2LU"/>
+                    <constraint firstItem="uBe-oJ-0fX" firstAttribute="centerY" secondItem="uvv-RJ-dVn" secondAttribute="centerY" id="crF-lt-UAO"/>
+                    <constraint firstItem="fal-UC-ZHH" firstAttribute="leading" secondItem="mnG-KM-u7x" secondAttribute="leadingMargin" constant="20" id="ghR-bc-3U9"/>
+                    <constraint firstItem="K7V-eG-Pyw" firstAttribute="centerY" secondItem="1IL-v6-Z8M" secondAttribute="centerY" id="iaP-o1-Iul"/>
+                    <constraint firstItem="1IL-v6-Z8M" firstAttribute="centerY" secondItem="mnG-KM-u7x" secondAttribute="centerY" id="pfX-6i-hqP"/>
+                    <constraint firstItem="fal-UC-ZHH" firstAttribute="centerY" secondItem="mnG-KM-u7x" secondAttribute="centerY" id="qVE-RH-XdL"/>
+                    <constraint firstItem="K7V-eG-Pyw" firstAttribute="leading" secondItem="uvv-RJ-dVn" secondAttribute="trailing" constant="50" id="y6W-NI-UCP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="818"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CrW-xD-Jdn" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CrW-xD-Jdn" id="IeB-nN-5nq">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="h. 做恶梦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54A-KX-Gse">
+                        <rect key="frame" x="28" y="11" width="71" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpT-18-GB4">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuF-4j-dDI">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqz-wP-iG6">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ux-pN-UTi">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bqz-wP-iG6" firstAttribute="leading" secondItem="9ux-pN-UTi" secondAttribute="trailing" constant="50" id="9V9-HD-NNZ"/>
+                    <constraint firstItem="9ux-pN-UTi" firstAttribute="centerY" secondItem="bqz-wP-iG6" secondAttribute="centerY" id="EEV-QJ-9T2"/>
+                    <constraint firstItem="dpT-18-GB4" firstAttribute="leading" secondItem="wuF-4j-dDI" secondAttribute="trailing" constant="50" id="GqB-Mf-8Vg"/>
+                    <constraint firstItem="bqz-wP-iG6" firstAttribute="centerY" secondItem="wuF-4j-dDI" secondAttribute="centerY" id="MLx-CM-p2J"/>
+                    <constraint firstAttribute="trailing" secondItem="dpT-18-GB4" secondAttribute="trailing" constant="30" id="SzZ-yN-bRO"/>
+                    <constraint firstItem="dpT-18-GB4" firstAttribute="centerY" secondItem="IeB-nN-5nq" secondAttribute="centerY" id="VcJ-jd-cuM"/>
+                    <constraint firstItem="54A-KX-Gse" firstAttribute="centerY" secondItem="IeB-nN-5nq" secondAttribute="centerY" id="Wif-ni-Hpk"/>
+                    <constraint firstItem="wuF-4j-dDI" firstAttribute="leading" secondItem="bqz-wP-iG6" secondAttribute="trailing" constant="50" id="ZTv-G9-x7b"/>
+                    <constraint firstItem="54A-KX-Gse" firstAttribute="leading" secondItem="IeB-nN-5nq" secondAttribute="leadingMargin" constant="20" id="mAE-Fz-9F5"/>
+                    <constraint firstItem="wuF-4j-dDI" firstAttribute="centerY" secondItem="dpT-18-GB4" secondAttribute="centerY" id="rXj-hc-T38"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="899"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="azm-P4-2CS" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="azm-P4-2CS" id="UfY-IQ-oER">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i. 疼痛不适" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNF-5u-Ygo">
+                        <rect key="frame" x="28" y="11" width="83" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9Q-m5-J9T">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXe-zd-bvM">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR6-9j-zBa">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-id-lTK">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lR6-9j-zBa" firstAttribute="leading" secondItem="qsc-id-lTK" secondAttribute="trailing" constant="50" id="4Jt-yB-bZA"/>
+                    <constraint firstItem="qsc-id-lTK" firstAttribute="centerY" secondItem="lR6-9j-zBa" secondAttribute="centerY" id="4bb-dU-yF8"/>
+                    <constraint firstItem="lR6-9j-zBa" firstAttribute="centerY" secondItem="QXe-zd-bvM" secondAttribute="centerY" id="CPW-zh-ZrI"/>
+                    <constraint firstItem="q9Q-m5-J9T" firstAttribute="centerY" secondItem="UfY-IQ-oER" secondAttribute="centerY" id="VAg-cf-yOD"/>
+                    <constraint firstItem="wNF-5u-Ygo" firstAttribute="centerY" secondItem="UfY-IQ-oER" secondAttribute="centerY" id="b87-v8-3hw"/>
+                    <constraint firstItem="QXe-zd-bvM" firstAttribute="leading" secondItem="lR6-9j-zBa" secondAttribute="trailing" constant="50" id="dpa-Xf-dpK"/>
+                    <constraint firstAttribute="trailing" secondItem="q9Q-m5-J9T" secondAttribute="trailing" constant="30" id="el3-Sp-FAw"/>
+                    <constraint firstItem="QXe-zd-bvM" firstAttribute="centerY" secondItem="q9Q-m5-J9T" secondAttribute="centerY" id="gxy-Yp-54U"/>
+                    <constraint firstItem="q9Q-m5-J9T" firstAttribute="leading" secondItem="QXe-zd-bvM" secondAttribute="trailing" constant="50" id="o5J-x9-YML"/>
+                    <constraint firstItem="wNF-5u-Ygo" firstAttribute="leading" secondItem="UfY-IQ-oER" secondAttribute="leadingMargin" constant="20" id="zmz-av-dV0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="980"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2KD-F2-CIT" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2KD-F2-CIT" id="S1E-jL-DPA">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="j. 其它影响睡眠的事情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svg-tS-9YN">
+                        <rect key="frame" x="28" y="11" width="169" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAW-TC-Tk5">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yny-YV-Ggv">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV8-BD-E1d">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-vg-gTR">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="svg-tS-9YN" firstAttribute="leading" secondItem="S1E-jL-DPA" secondAttribute="leadingMargin" constant="20" id="OBN-MU-dTw"/>
+                    <constraint firstItem="Yny-YV-Ggv" firstAttribute="centerY" secondItem="XAW-TC-Tk5" secondAttribute="centerY" id="OJH-Vh-KE4"/>
+                    <constraint firstItem="Yny-YV-Ggv" firstAttribute="leading" secondItem="yV8-BD-E1d" secondAttribute="trailing" constant="50" id="Oda-DZ-ocF"/>
+                    <constraint firstAttribute="trailing" secondItem="XAW-TC-Tk5" secondAttribute="trailing" constant="30" id="cIl-Xq-bkL"/>
+                    <constraint firstItem="XAW-TC-Tk5" firstAttribute="leading" secondItem="Yny-YV-Ggv" secondAttribute="trailing" constant="50" id="luR-Ow-cu3"/>
+                    <constraint firstItem="XAW-TC-Tk5" firstAttribute="centerY" secondItem="S1E-jL-DPA" secondAttribute="centerY" id="mKe-Gs-sJf"/>
+                    <constraint firstItem="svg-tS-9YN" firstAttribute="centerY" secondItem="S1E-jL-DPA" secondAttribute="centerY" id="otd-g4-Xvb"/>
+                    <constraint firstItem="yV8-BD-E1d" firstAttribute="leading" secondItem="g4R-vg-gTR" secondAttribute="trailing" constant="50" id="tjJ-FG-VZU"/>
+                    <constraint firstItem="g4R-vg-gTR" firstAttribute="centerY" secondItem="yV8-BD-E1d" secondAttribute="centerY" id="y23-a6-Hjf"/>
+                    <constraint firstItem="yV8-BD-E1d" firstAttribute="centerY" secondItem="Yny-YV-Ggv" secondAttribute="centerY" id="zv5-Af-dog"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="1060"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aEJ-K3-fhh" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aEJ-K3-fhh" id="Mb1-bF-y3i">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6. 近1个月，总的来说，您认为己的睡眠质量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sP-4m-pUc">
+                        <rect key="frame" x="28" y="11" width="339" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJk-HC-lhb">
+                        <rect key="frame" x="409" y="7" width="31" height="30"/>
+                        <state key="normal" title="很差"/>
+                        <connections>
+                            <action selector="one4:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vl9-N5-K1d"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DP-KD-ZMh">
+                        <rect key="frame" x="298" y="7" width="31" height="30"/>
+                        <state key="normal" title="较差"/>
+                        <connections>
+                            <action selector="one3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="82i-8n-d9X"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-wD-aG5">
+                        <rect key="frame" x="187" y="7" width="31" height="30"/>
+                        <state key="normal" title="较好"/>
+                        <connections>
+                            <action selector="one2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p62-Pm-AaX"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjY-rA-7xQ">
+                        <rect key="frame" x="76" y="7" width="31" height="30"/>
+                        <state key="normal" title="很好"/>
+                        <connections>
+                            <action selector="one1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0DX-Xl-SPe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jJk-HC-lhb" firstAttribute="leading" secondItem="2DP-KD-ZMh" secondAttribute="trailing" constant="80" id="FXn-cV-ele"/>
+                    <constraint firstItem="5sP-4m-pUc" firstAttribute="leading" secondItem="Mb1-bF-y3i" secondAttribute="leadingMargin" constant="20" id="Lqe-4I-n9j"/>
+                    <constraint firstItem="2DP-KD-ZMh" firstAttribute="leading" secondItem="MWr-wD-aG5" secondAttribute="trailing" constant="80" id="Vuk-QT-3g4"/>
+                    <constraint firstItem="MWr-wD-aG5" firstAttribute="leading" secondItem="YjY-rA-7xQ" secondAttribute="trailing" constant="80" id="WBI-S5-YM4"/>
+                    <constraint firstItem="jJk-HC-lhb" firstAttribute="centerY" secondItem="Mb1-bF-y3i" secondAttribute="centerY" id="bBz-EJ-8Lt"/>
+                    <constraint firstItem="YjY-rA-7xQ" firstAttribute="centerY" secondItem="MWr-wD-aG5" secondAttribute="centerY" id="cKk-dg-XmY"/>
+                    <constraint firstItem="MWr-wD-aG5" firstAttribute="centerY" secondItem="2DP-KD-ZMh" secondAttribute="centerY" id="fSg-sC-YQV"/>
+                    <constraint firstItem="2DP-KD-ZMh" firstAttribute="centerY" secondItem="jJk-HC-lhb" secondAttribute="centerY" id="k6K-9x-nc0"/>
+                    <constraint firstAttribute="trailing" secondItem="jJk-HC-lhb" secondAttribute="trailing" constant="30" id="wPX-CQ-ysK"/>
+                    <constraint firstItem="5sP-4m-pUc" firstAttribute="centerY" secondItem="Mb1-bF-y3i" secondAttribute="centerY" id="yqZ-VK-1GT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="1142"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zuT-wH-alk" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zuT-wH-alk" id="Lnq-me-Ybv">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7. 近1个月，您用药物催眠的情况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-D5-aWo">
+                        <rect key="frame" x="28" y="11" width="250" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLA-Ry-8Yw">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                        <connections>
+                            <action selector="two4:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gh7-tT-fiH"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7g-RK-Cpu">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                        <connections>
+                            <action selector="two3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QlA-Lp-Huv"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAS-yi-d5O">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                        <connections>
+                            <action selector="two2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cu1-PH-gq3"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6v-uD-BcD">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                        <connections>
+                            <action selector="two1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fZb-Z8-dQX"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SLA-Ry-8Yw" firstAttribute="centerY" secondItem="Lnq-me-Ybv" secondAttribute="centerY" id="B5t-A0-w4h"/>
+                    <constraint firstItem="PcH-D5-aWo" firstAttribute="leading" secondItem="Lnq-me-Ybv" secondAttribute="leadingMargin" constant="20" id="OoH-9d-ffn"/>
+                    <constraint firstItem="X6v-uD-BcD" firstAttribute="centerY" secondItem="aAS-yi-d5O" secondAttribute="centerY" id="QbW-NB-Yn9"/>
+                    <constraint firstItem="PcH-D5-aWo" firstAttribute="centerY" secondItem="Lnq-me-Ybv" secondAttribute="centerY" id="d6O-Ms-WL3"/>
+                    <constraint firstItem="aAS-yi-d5O" firstAttribute="leading" secondItem="X6v-uD-BcD" secondAttribute="trailing" constant="50" id="jbd-lx-59w"/>
+                    <constraint firstItem="y7g-RK-Cpu" firstAttribute="leading" secondItem="aAS-yi-d5O" secondAttribute="trailing" constant="50" id="nxu-0T-nAU"/>
+                    <constraint firstItem="y7g-RK-Cpu" firstAttribute="centerY" secondItem="SLA-Ry-8Yw" secondAttribute="centerY" id="oMg-wY-bfk"/>
+                    <constraint firstAttribute="trailing" secondItem="SLA-Ry-8Yw" secondAttribute="trailing" constant="30" id="pci-CD-A2a"/>
+                    <constraint firstItem="aAS-yi-d5O" firstAttribute="centerY" secondItem="y7g-RK-Cpu" secondAttribute="centerY" id="tgi-o7-fMX"/>
+                    <constraint firstItem="SLA-Ry-8Yw" firstAttribute="leading" secondItem="y7g-RK-Cpu" secondAttribute="trailing" constant="50" id="xEH-Dn-PY5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="1222"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fw0-l7-g6g" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fw0-l7-g6g" id="9An-HN-gVx">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8. 近1个月，您常感到困倦吗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieo-iD-TyN">
+                        <rect key="frame" x="28" y="11" width="218" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdj-V7-ovx">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周"/>
+                        <connections>
+                            <action selector="three4:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dAU-FK-sOn"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGz-rr-vnv">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周"/>
+                        <connections>
+                            <action selector="three3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MXC-46-H9U"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZj-Nd-Lh5">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                        <connections>
+                            <action selector="three2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gMz-2J-a4x"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffr-Tt-k5v">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                        <connections>
+                            <action selector="three1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hOP-t6-ZMS"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qdj-V7-ovx" firstAttribute="leading" secondItem="XGz-rr-vnv" secondAttribute="trailing" constant="50" id="40i-1D-2ie"/>
+                    <constraint firstItem="qdj-V7-ovx" firstAttribute="centerY" secondItem="9An-HN-gVx" secondAttribute="centerY" id="7Vs-HQ-tOe"/>
+                    <constraint firstItem="IZj-Nd-Lh5" firstAttribute="centerY" secondItem="XGz-rr-vnv" secondAttribute="centerY" id="7rh-XA-EwD"/>
+                    <constraint firstItem="XGz-rr-vnv" firstAttribute="centerY" secondItem="qdj-V7-ovx" secondAttribute="centerY" id="92b-gS-Xfq"/>
+                    <constraint firstItem="ieo-iD-TyN" firstAttribute="leading" secondItem="9An-HN-gVx" secondAttribute="leadingMargin" constant="20" id="Fi5-0V-JKY"/>
+                    <constraint firstItem="XGz-rr-vnv" firstAttribute="leading" secondItem="IZj-Nd-Lh5" secondAttribute="trailing" constant="50" id="TIy-3f-P1O"/>
+                    <constraint firstItem="IZj-Nd-Lh5" firstAttribute="leading" secondItem="Ffr-Tt-k5v" secondAttribute="trailing" constant="50" id="WqH-Gd-B3D"/>
+                    <constraint firstItem="Ffr-Tt-k5v" firstAttribute="centerY" secondItem="IZj-Nd-Lh5" secondAttribute="centerY" id="mXZ-Mn-A7P"/>
+                    <constraint firstAttribute="trailing" secondItem="qdj-V7-ovx" secondAttribute="trailing" constant="30" id="nVJ-Ty-PSd"/>
+                    <constraint firstItem="ieo-iD-TyN" firstAttribute="centerY" secondItem="9An-HN-gVx" secondAttribute="centerY" id="yQE-iM-dt6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="1302"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9JW-Bx-QTj" customClass="PizibaoCell">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9JW-Bx-QTj" id="QX8-an-vyX">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9. 近1个月，您做事情的精力不足吗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofA-QV-Dpb">
+                        <rect key="frame" x="28" y="11" width="269" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZv-ZE-h0C">
+                        <rect key="frame" x="394" y="7" width="46" height="30"/>
+                        <state key="normal" title="经常有"/>
+                        <connections>
+                            <action selector="four4:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MXb-gS-VCm"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B8-rN-DgW">
+                        <rect key="frame" x="283" y="7" width="46" height="30"/>
+                        <state key="normal" title="有时有"/>
+                        <connections>
+                            <action selector="four3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rm8-Kz-krf"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCE-MU-deA">
+                        <rect key="frame" x="172" y="7" width="46" height="30"/>
+                        <state key="normal" title="偶尔有"/>
+                        <connections>
+                            <action selector="four2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="u4o-0G-sYo"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJA-qa-hYY">
+                        <rect key="frame" x="76" y="7" width="31" height="30"/>
+                        <state key="normal" title="没有"/>
+                        <connections>
+                            <action selector="four1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j2u-2e-vnD"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ofA-QV-Dpb" firstAttribute="centerY" secondItem="QX8-an-vyX" secondAttribute="centerY" id="0so-ag-lzC"/>
+                    <constraint firstItem="1B8-rN-DgW" firstAttribute="centerY" secondItem="wZv-ZE-h0C" secondAttribute="centerY" id="Bjo-Jj-y97"/>
+                    <constraint firstItem="SCE-MU-deA" firstAttribute="centerY" secondItem="1B8-rN-DgW" secondAttribute="centerY" id="E4q-JX-ZUu"/>
+                    <constraint firstAttribute="trailing" secondItem="wZv-ZE-h0C" secondAttribute="trailing" constant="30" id="Icz-LE-LhU"/>
+                    <constraint firstItem="1B8-rN-DgW" firstAttribute="leading" secondItem="SCE-MU-deA" secondAttribute="trailing" constant="65" id="Kh9-gC-lyS"/>
+                    <constraint firstItem="ofA-QV-Dpb" firstAttribute="leading" secondItem="QX8-an-vyX" secondAttribute="leadingMargin" constant="20" id="PA5-nz-3Gg"/>
+                    <constraint firstItem="GJA-qa-hYY" firstAttribute="centerY" secondItem="SCE-MU-deA" secondAttribute="centerY" id="VIE-fd-A3k"/>
+                    <constraint firstItem="SCE-MU-deA" firstAttribute="leading" secondItem="GJA-qa-hYY" secondAttribute="trailing" constant="65" id="ifE-SP-iql"/>
+                    <constraint firstItem="wZv-ZE-h0C" firstAttribute="centerY" secondItem="QX8-an-vyX" secondAttribute="centerY" id="ont-xu-deX"/>
+                    <constraint firstItem="wZv-ZE-h0C" firstAttribute="leading" secondItem="1B8-rN-DgW" secondAttribute="trailing" constant="65" id="uhh-vl-62g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1" y="1384"/>
+        </tableViewCell>
+    </objects>
+</document>

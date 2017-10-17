@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddGroupClassView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIh-Li-NH5">
+                    <rect key="frame" x="8" y="8" width="584" height="140"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="团体课程名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvd-iU-uEJ">
+                            <rect key="frame" x="8" y="8" width="568" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="8qX-gA-3Ms"/>
+                            </constraints>
+                            <color key="textColor" red="0.14901961386203766" green="0.14901961386203766" blue="0.14901961386203766" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTN-d5-2MM" userLabel="LineView">
+                            <rect key="frame" x="0.0" y="48" width="584" height="1"/>
+                            <color key="backgroundColor" red="0.80784314870834351" green="0.80784314870834351" blue="0.80784314870834351" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="MVB-hB-TRg"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaG-Kw-Ab1">
+                            <rect key="frame" x="8" y="57" width="568" height="75"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="IJi-gz-Sgq"/>
+                            </constraints>
+                            <color key="textColor" red="0.32549020648002625" green="0.32549020648002625" blue="0.32549020648002625" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="MTN-d5-2MM" firstAttribute="top" secondItem="qvd-iU-uEJ" secondAttribute="bottom" constant="8" id="1YM-PM-yXo"/>
+                        <constraint firstItem="qvd-iU-uEJ" firstAttribute="top" secondItem="vIh-Li-NH5" secondAttribute="top" constant="8" id="LNe-T2-g2g"/>
+                        <constraint firstItem="qvd-iU-uEJ" firstAttribute="leading" secondItem="vIh-Li-NH5" secondAttribute="leading" constant="8" id="Qbo-Kz-g3j"/>
+                        <constraint firstAttribute="trailing" secondItem="FaG-Kw-Ab1" secondAttribute="trailing" constant="8" id="XnF-1W-RMw"/>
+                        <constraint firstItem="FaG-Kw-Ab1" firstAttribute="top" secondItem="MTN-d5-2MM" secondAttribute="bottom" constant="8" id="aiv-xr-GRZ"/>
+                        <constraint firstAttribute="trailing" secondItem="MTN-d5-2MM" secondAttribute="trailing" id="ccZ-Ni-JlK"/>
+                        <constraint firstAttribute="bottom" secondItem="FaG-Kw-Ab1" secondAttribute="bottom" constant="8" id="hvH-yd-2xo"/>
+                        <constraint firstItem="MTN-d5-2MM" firstAttribute="leading" secondItem="vIh-Li-NH5" secondAttribute="leading" id="mVU-0O-ely"/>
+                        <constraint firstAttribute="trailing" secondItem="qvd-iU-uEJ" secondAttribute="trailing" constant="8" id="pq3-gM-MuR"/>
+                        <constraint firstItem="FaG-Kw-Ab1" firstAttribute="leading" secondItem="vIh-Li-NH5" secondAttribute="leading" constant="8" id="sLq-R7-vyg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.boderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                            <color key="value" red="0.80784314870834351" green="0.80784314870834351" blue="0.80784314870834351" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjL-KT-fgi">
+                    <rect key="frame" x="8" y="168" width="584" height="50"/>
+                    <color key="backgroundColor" red="0.78039216995239258" green="0.16470588743686676" blue="0.16470588743686676" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ZW9-FP-7MV"/>
+                    </constraints>
+                    <state key="normal" title="创建团体课程">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createGroupClass:" destination="iN0-l3-epB" eventType="touchUpInside" id="ghS-GH-UHZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vIh-Li-NH5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="8IZ-fn-RRp"/>
+                <constraint firstItem="vIh-Li-NH5" firstAttribute="trailing" secondItem="SjL-KT-fgi" secondAttribute="trailing" id="AdH-Bg-DyV"/>
+                <constraint firstItem="vIh-Li-NH5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="CVS-ME-8hl"/>
+                <constraint firstItem="SjL-KT-fgi" firstAttribute="top" secondItem="vIh-Li-NH5" secondAttribute="bottom" constant="20" id="DjP-hd-IeJ"/>
+                <constraint firstItem="vIh-Li-NH5" firstAttribute="leading" secondItem="SjL-KT-fgi" secondAttribute="leading" id="TKD-gW-nzJ"/>
+                <constraint firstAttribute="trailing" secondItem="vIh-Li-NH5" secondAttribute="trailing" constant="8" id="rqc-sn-ghY"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="vIh-Li-NH5" id="quF-G3-jcj"/>
+                <outlet property="classIntroduceTextView" destination="FaG-Kw-Ab1" id="Vyu-kK-7TM"/>
+                <outlet property="classNameField" destination="qvd-iU-uEJ" id="Ebk-Tx-gRj"/>
+            </connections>
+            <point key="canvasLocation" x="262" y="387"/>
+        </view>
+    </objects>
+</document>

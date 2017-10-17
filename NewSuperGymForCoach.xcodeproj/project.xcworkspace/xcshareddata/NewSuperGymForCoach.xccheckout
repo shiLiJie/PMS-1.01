@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6F33B36B-0398-481E-A57D-E4FF20A3901D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AD77B0CF677FECF93AF4A08C28DFDCF6B475A82C</key>
+		<string>git.oschina.net:notsure/NewSuperGymForCoach.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NewSuperGymForCoach/NewSuperGymForCoach.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AD77B0CF677FECF93AF4A08C28DFDCF6B475A82C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.oschina.net:notsure/NewSuperGymForCoach.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AD77B0CF677FECF93AF4A08C28DFDCF6B475A82C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AD77B0CF677FECF93AF4A08C28DFDCF6B475A82C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NewSuperGymForCoach</string>
+		</dict>
+	</array>
+</dict>
+</plist>

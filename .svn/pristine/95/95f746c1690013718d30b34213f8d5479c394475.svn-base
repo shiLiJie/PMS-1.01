@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell11" selectionStyle="default" indentationWidth="10" id="FqE-hv-B3i" customClass="PizibaoCell2">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FqE-hv-B3i" id="IeR-gj-x8H">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a. 入睡困难(30分钟内不能入睡)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P1-RF-A59">
+                        <rect key="frame" x="28" y="11" width="241" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOi-bw-Bfx">
+                        <rect key="frame" x="381" y="7" width="59" height="30"/>
+                        <state key="normal" title="≥ 3次/周">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="fourClick:" destination="FqE-hv-B3i" eventType="touchUpInside" id="0ob-iV-Cd9"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29R-yi-bjn">
+                        <rect key="frame" x="272" y="7" width="59" height="30"/>
+                        <state key="normal" title="1-2次/周">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="threeClick:" destination="FqE-hv-B3i" eventType="touchUpInside" id="Fdg-Vs-bHv"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-vB-Kap">
+                        <rect key="frame" x="164" y="7" width="58" height="30"/>
+                        <state key="normal" title="〈1次/周"/>
+                        <connections>
+                            <action selector="twoClick:" destination="FqE-hv-B3i" eventType="touchUpInside" id="Kga-tD-fL3"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xog-mb-KFl">
+                        <rect key="frame" x="84" y="7" width="30" height="30"/>
+                        <state key="normal" title="无"/>
+                        <connections>
+                            <action selector="oneClick:" destination="FqE-hv-B3i" eventType="touchUpInside" id="Gzr-60-f2c"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="29R-yi-bjn" firstAttribute="leading" secondItem="BBT-vB-Kap" secondAttribute="trailing" constant="50" id="08G-Ux-AT6"/>
+                    <constraint firstItem="XOi-bw-Bfx" firstAttribute="leading" secondItem="29R-yi-bjn" secondAttribute="trailing" constant="50" id="39B-so-NMO"/>
+                    <constraint firstItem="BBT-vB-Kap" firstAttribute="centerY" secondItem="29R-yi-bjn" secondAttribute="centerY" id="DZN-dA-wDB"/>
+                    <constraint firstItem="XOi-bw-Bfx" firstAttribute="centerY" secondItem="IeR-gj-x8H" secondAttribute="centerY" id="TW7-pe-WrX"/>
+                    <constraint firstItem="29R-yi-bjn" firstAttribute="centerY" secondItem="XOi-bw-Bfx" secondAttribute="centerY" id="ZSj-z7-mTt"/>
+                    <constraint firstAttribute="trailing" secondItem="XOi-bw-Bfx" secondAttribute="trailing" constant="30" id="dGL-vt-p9A"/>
+                    <constraint firstItem="2P1-RF-A59" firstAttribute="centerY" secondItem="IeR-gj-x8H" secondAttribute="centerY" id="dSl-m3-43j"/>
+                    <constraint firstItem="BBT-vB-Kap" firstAttribute="leading" secondItem="xog-mb-KFl" secondAttribute="trailing" constant="50" id="e1w-we-6cn"/>
+                    <constraint firstItem="2P1-RF-A59" firstAttribute="leading" secondItem="IeR-gj-x8H" secondAttribute="leadingMargin" constant="20" id="mmU-i5-jTo"/>
+                    <constraint firstItem="xog-mb-KFl" firstAttribute="centerY" secondItem="BBT-vB-Kap" secondAttribute="centerY" id="vFu-w1-Jcc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fourBtn" destination="XOi-bw-Bfx" id="Zpp-jD-Ap1"/>
+                <outlet property="oneBtn" destination="xog-mb-KFl" id="nyb-ky-qdW"/>
+                <outlet property="questionLab" destination="2P1-RF-A59" id="Ypn-Uw-HzY"/>
+                <outlet property="threeBtn" destination="29R-yi-bjn" id="40r-yJ-IQx"/>
+                <outlet property="towBtn" destination="BBT-vB-Kap" id="cBe-Rh-fjy"/>
+            </connections>
+            <point key="canvasLocation" x="-148" y="128"/>
+        </tableViewCell>
+    </objects>
+</document>

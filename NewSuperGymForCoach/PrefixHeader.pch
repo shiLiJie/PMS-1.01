@@ -1,0 +1,293 @@
+//
+//  PrefixHeader.pch
+//  NewSuperGymForCoach
+//
+//  Created by hanyou on 8/18/15.
+//  Copyright (c) 2015 HanYouApp. All rights reserved.
+//
+
+#define NewSuperGymForCoach_PrefixHeader_pch
+#define NewSuperGymForCoach_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "NSDictionary+HYParametersSign.h"
+#import "NSString+HYCategory.h"
+#import "NSDate+HYCategory.h"
+#import "NSString+HYCategory.h"
+#import "UIColor+HYCategory.h"
+#import "UIFont+HYCategory.h"
+#import "UIView+HYCategory.h"
+#import "UIColor+HYCategory.h"
+#import "UIFont+HYCategory.h"
+#import "UITextField+HYCategory.h"
+#import "UITableView+HYCategories.h"
+#import "UICollectionView+HYCategory.h"
+
+
+#import "UserTool.h"
+#import "UserObj.h"
+#import "TAGPlayer.h"
+#import "TAGPlayerhigha.h"
+#import "TAGPlayerlowa.h"
+#import "TAGPlayerlowb.h"
+#import "TAGPlayerhighb.h"
+#import "TAGPlayerlowg.h"
+#import "TAGPlayerhighg.h"
+#import "TAGPlayerderta.h"
+#import "TAGPlayerTheta.h"
+
+
+
+#import "SLJNotificationTools.h"
+#import "ICInfomationView.h"
+
+
+
+#import <Masonry.h>
+#import <MBProgressHUD.h>
+#import <AFNetworking.h>
+#import "UIImageView+WebCache.h"
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <DLAVAlertView.h>
+#import <UITableView+FDTemplateLayoutCell.h>
+#import "MBProgressHUD+BYHUDTools.h"
+#import "BYHttpRequest.h"
+#import "MBProgressHUD+YCL.h"
+#import "HttpRequest.h"
+#import "NSString+md5Token.h"
+#import "UIColor+Extend.h"
+#import "NSString+Base64.h"
+#import "SLJJudgementString.h"
+#import "UIDevice+IdentifierAddition.h"
+
+//#import "InterfaceGym.h"//健身卡接口集
+#import "publiCattribute.h"
+
+
+//Data
+#define kIOSVersion        [[[UIDevice currentDevice]systemVersion] intValue]
+
+//#define kLocal(key)    NSLocalizedStringFromTable(key,  @"Local", nil)
+#define kLocal(key)    NSLocalizedString(key, nil)
+
+#define RGBA(r, g, b, a)    [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:(a)]
+
+#ifdef DEBUG
+#define DebugLog(fmt, ...) NSLog((@"[文件名:%s][函数名:%s][行号:%d]" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DebugLog(...);
+#endif
+
+#ifdef DEBUG
+#define kDebug(fmt, ...) NSLog((@"[Line:%d]" fmt), __LINE__, ##__VA_ARGS__);
+#else
+#define kDebug(...);
+#endif
+
+// UserInfo
+#define kUserIDKey  @"UserID"
+#define kUserID     [[NSUserDefaults standardUserDefaults] integerForKey:kUserIDKey]
+#define kIsLogin    (kUserID > 0)
+
+#define kGymIDKey   @"GymID"
+#define kGymID      [[NSUserDefaults standardUserDefaults] integerForKey:kGymIDKey]
+
+//网络状态
+#define kNetIsOK                [AFNetworkReachabilityManager sharedManager].isReachable
+
+//UI
+#define kScreenWidth            ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight           ([UIScreen mainScreen].bounds.size.height)
+
+#pragma mark - 屏幕尺寸
+#define kScreen_Width    ([UIScreen mainScreen].bounds.size.width)
+#define kScreen_Height   ([UIScreen mainScreen].bounds.size.height)
+#define kScreen_Frame    (CGRectMake(0, 0, kScreen_Width, kScreen_Height))
+#define KscreenAllFrame  ([UIScreen mainScreen].bounds)
+#define kScreen_CenterX  kScreen_Width/2
+#define kScreen_CenterY  kScreen_Height/2
+
+#define WIDTH                   self.view.frame.size.width
+#define HEIGHT                  self.view.frame.size.height
+#define kTabBarHeight           49
+#define kNavHeight              64
+#define kStatusBarHeight        22
+#define kBaseMargin             12
+
+#define AA                      @"A"
+#define BB                      @"B"
+#define CC                      @"C"
+#define DD                      @"D"
+#define E                       @"E"
+#define F                       @"F"
+#define G                       @"G"
+#define H                       @"H"
+
+
+#define ksureconnect            @"确认链接吗?"
+#define ksure                   @"确认"
+#define kcancel                 @"取消"
+#define kurl                    @"http://www.musiccare.cn"
+#define Dian                    @"点"
+#define Cell0                   @"Level0_Cell"
+#define Cell1                   @"Level1_Cell"
+#define Cell2                   @"Level2_Cell"
+#define ChangeShoudong          @"请先切换到手动模式"
+#define JianchaFile             @"检查您的文件的名字"
+#define KWeek                   @"1",@"2",@"3",@"4",@"5",@"6"
+#define KHour                   @"01:00",@"02:00",@"03:00",@"04:00",@"05:00",@"06:00",@"07:00",@"08:00",@"09:00",@"10:00",@"11:00",@"12:00",@"13:00",@"14:00",@"15:00",@"16:00",@"17:00",@"18:00",@"19:00",@"20:00",@"21:00",@"22:00",@"23:00",@"00:00"
+#define KMin                    @"5",@"10",@"15",@"20",@"25",@"30",@"35",@"40",@"45",@"50",@"55",@"60"
+#define KHH                     @"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29",@"30",@"31"
+
+
+#define FILEPATH                [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define kDocument               [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+
+#pragma mark ----- 报告页 -----
+#define kBaogaoTitle            @" 报告 "
+#define kBaogaoArr              @"0.2" , @"0.2" , @"0.1" , @"0.1" , @"0.1" ,@"0.1",@"0.1"
+#define kBaogaoNameArr          @"θ波",@"慢速α波",@"快速α波",@"慢速β波",@"快速β波",@"慢速Y波",@"快速Y波"
+
+#pragma mark ----- 治疗页 -----
+#define kZhiliaoBofang          @"正在播放: %@"
+#define kZhiliaoPath            @"%@/PCIMPlayer/母体疗愈"
+#define kZhiliaoPath1           @"%@/PCIMPlayer/水晶疗愈"
+#define kZhiliaoPath2           @"%@/PCIMPlayer/水之疗愈"
+#define kZhiliaoPath3           @"%@/PCIMPlayer/七轮疗愈"
+#define kZhiliaoPath4           @"%@/PCIMPlayer/光之疗愈"
+#define kZhiliaoPath5           @"%@/PCIMPlayer/星际疗愈"
+#define kZhiliaoPath6           @"%@/PCIMPlayer/深海疗愈"
+#define kZhiliaoPath7           @"%@/PCIMPlayer/天使团疗愈"
+#define kZhiliaoPath8           @"%@/PCIMPlayer/OM疗愈"
+#define kZhiliaoPath9           @"%@/PCIMPlayer/部落疗愈"
+#define kZhiliaoPath10           @"%@/PCIMPlayer/睡眠疗愈"
+#define kZhiliaoPath11           @"%@/PCIMPlayer/导入"
+#define kZhiliaoPath12           @"%@/PCIMPlayer/唤醒"
+#define kTishiyinPathTheat      @"%@/技术部门自然音效/theat"
+#define kTishiyinPathLowA       @"%@/技术部门自然音效/lowA"
+#define kTishiyinPathHighA      @"%@/技术部门自然音效/highA"
+#define kTishiyinPathderta      @"%@/技术部门自然音效/derta"
+#define kTishiyinPathhighb      @"%@/技术部门自然音效/highb"
+#define kTishiyinPathhighy      @"%@/技术部门自然音效/highy"
+#define kTishiyinPathlowb      @"%@/技术部门自然音效/lowb"
+#define kTishiyinPathlowy      @"%@/技术部门自然音效/lowy"
+
+#define kZhiliaoDS_Store        @".DS_Store"
+
+
+#define BIG_DATA_HEAD           @"aaaa2002"
+#define SAMILL_DATA_HEAD        @"aaaa0480"
+
+#define SAMILLHEAD              @"aaaa048002"
+#define BIGHEAD                 @"aaaa2002"
+
+
+#define kBlueClear              @"1001AA02AB020D0A"
+#define kBlueStop               @"1001AA03A402000D0A"  
+#define kBlueStar               @"1001AA03A502010D0A"
+#define OLDBANBEN               @"1001aa11aa"
+#define NEWBANBEN               @"1001aa0eaa"
+#define NEWONEBANBEN            @"1001aa09aa"
+#define KBanben                 @"1001AA01A90D0A"
+
+#define kAbout                  @"软件版本号:  V1.0.0",@"产品介绍"
+
+
+#pragma mark ----- 通知 -----
+#define NOTIFICATIONPASSDATA    @"passdata"
+#define NOTIFICATIONBINGTU      @"bingtu"
+#define NOTIFICATIONZIDONG      @"zidong"
+#define NOTIFICATIONSHOUDONG    @"shoudong"
+#define NOTIFICATIONTONGZHI     @"tongzhi"
+#define NOTIFICATIONKEYNAME     @"name"
+#define NOTIFICATIONKEYTIME     @"time"
+#define NOTIFICATIONALTERVIEW   @"alterview"
+#define NOTIFICATIONBINGTUU     @"BINGTU"
+#define NOTIFICATIONHUIFANG     @"huifang"
+#define NOTIFICATIONQIEHUANBAOGAO   @"qiehuanbaogao"
+#define NOTIFICATIONTINGZHIDENGLU   @"tingzhidenglu"
+#define NOTIFICATIONHUIFUBAOGAO @"huibubaogao"
+
+#define GENGXINSHEZHISHUJU      @"GENGXINSHEZHISHUJU"
+#define GENGXINZONFEN           @"GENGXINZONFEN"
+#define BINGTUHUIFANG           @"BINGTUHUIFANG"
+#define BINGTUBAOGAO            @"BINGTUBAOGAO"
+#define NOTIFICATIONLOGIN       @"NOTIFICATIONLOGIN"
+#define NOTIFICATIONMUSICURL    @"NOTIFICATIONMUSICURL"
+#define CONNECTVIEW             @"CONNECTVIEW"
+#define CANCEL                  @"CANCEL"
+#define PLAYTIMEMUISC           @"PLAYTIMEMUISC"
+
+
+
+#define DISCONNECTBLUE          @"设备已断开"
+#define DISCONNECTDEVICE        @"未连接设备"
+#define STOPTEXT                @"请先停止检测"
+#define SURE                    @"确定"
+#define CACEL                   @"取消"
+#define LOGINDATA               @"是否储存数据?"
+#define HEADLINE                @"请检查头戴是否佩戴好"
+#define CUTDATA                 @"637574"
+
+#pragma mark ----- xib -----
+#define POPDRIVERXIB            @"PopDriverViewController"
+#define KSVIEWXIB               @"KSViewController"
+
+#pragma mark ----- 报告标题 -----
+#define NODATA                  @"无有效数据"
+
+#define CHARTONE                @"脑波累积值报告"
+#define CHARTTWO                @"脑波峰值报告"
+#define CHARTTHREE              @"冥想和关注度累积报告"
+#define CHARTFOUR               @"冥想和关注度峰值报告"
+
+#define NANN                     @"nan",@"nan",@"nan",@"nan",@"nan",@"nan",@"nan"
+#define NANTWO                  @"nan",@"nan",@"nan",@"nan",@"nan",@"nan",@"nan",@"nan",@"nan"
+
+
+#define KEY_FENGE_  @"a111111111111111111111111111111b"
+
+
+
+
+
+#pragma mark ----- cell -----
+#define KCellMusicCell          @"MusicCell"
+#define KCellDeviceCell         @"DeviceCell"
+#define KCellTextCell           @"TextCell"
+#define KCellZhiliaoCell        @"zhiliaocell"
+#define KCellSearchCell         @"SearchCell"
+
+#pragma mark ----- sqlite -----
+#define KsqlCreateTable         @"CREATE TABLE IF NOT EXISTS userinfo (id INTEGER PRIMARY KEY AUTOINCREMENT, '%@' TEXT, '%@' TEXT, '%@' TEXT, '%@' TEXT, '%@' TEXT )",@"ACCOUNT",@"PWD",@"FAMID",@"PHONE",@"MAIL"
+
+#pragma mark ----- KColor -----
+#define KColorA                 [CPTColor colorWithComponentRed:151.0/255 green:154.0/255 blue:154.0/255 alpha:1.0]
+#define Kcolora                 [CPTColor colorWithComponentRed:151.0/255 green:154.0/255 blue:154.0/255 alpha:0.1]
+#define KColorB                 [CPTColor colorWithComponentRed:103.0/255 green:184.0/255 blue:246.0/255 alpha:1.0]
+#define Kcolorb                 [CPTColor colorWithComponentRed:103.0/255 green:184.0/255 blue:246.0/255 alpha:0.1]
+#define KColorC                 [CPTColor colorWithComponentRed:250.0/255 green:243.0/255 blue:125.0/255 alpha:1.0]
+#define Kcolorc                 [CPTColor colorWithComponentRed:250.0/255 green:243.0/255 blue:125.0/255 alpha:0.1]
+#define KColorD                 [CPTColor colorWithComponentRed:249.0/255 green:237.0/255 blue:48.0/255 alpha:1.0]
+#define Kcolord                 [CPTColor colorWithComponentRed:249.0/255 green:237.0/255 blue:48.0/255 alpha:0.1]
+#define KColorF                 [CPTColor colorWithComponentRed:47.0/255 green:198.0/255 blue:104.0/255 alpha:1.0]
+#define Kcolorf                 [CPTColor colorWithComponentRed:47.0/255 green:198.0/255 blue:104.0/255 alpha:0.1]
+#define KColorE                 [CPTColor colorWithComponentRed:128.0/255 green:236.0/255 blue:104.0/255 alpha:1.0]
+#define Kcolore                 [CPTColor colorWithComponentRed:128.0/255 green:236.0/255 blue:104.0/255 alpha:0.1]
+#define KColorG                 [CPTColor colorWithComponentRed:244.0/255 green:127.0/255 blue:120.0/255 alpha:1.0]
+#define Kcolorg                 [CPTColor colorWithComponentRed:244.0/255 green:127.0/255 blue:120.0/255 alpha:0.1]
+#define KColorH                 [CPTColor colorWithComponentRed:238.0/255 green:65.0/255 blue:62.0/255 alpha:1.0]
+#define Kcolorh                 [CPTColor colorWithComponentRed:238.0/255 green:65.0/255 blue:62.0/255 alpha:0.1]
+
+
+
+
+
+
+
+
+
+

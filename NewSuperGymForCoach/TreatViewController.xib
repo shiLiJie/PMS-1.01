@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreatViewController">
+            <connections>
+                <outlet property="customMusicListBtn" destination="LQe-lZ-ZIJ" id="LcG-bD-m2X"/>
+                <outlet property="musicListTable" destination="hFG-2n-oU8" id="Ba1-BB-OxY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzV-64-0mP">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="20"/>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.12549019607843137" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="int-bs-OKf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gee-Q2-RDw">
+                    <rect key="frame" x="0.0" y="20" width="202" height="748"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xinxian" translatesAutoresizingMaskIntoConstraints="NO" id="BTI-Ia-eXp">
+                            <rect key="frame" x="0.0" y="135" width="202" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="RcE-HB-9ZA"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touying" translatesAutoresizingMaskIntoConstraints="NO" id="Tf4-wl-vwx">
+                            <rect key="frame" x="195" y="0.0" width="7" height="748"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="7" id="z4t-VT-s7V"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="fxb-ig-3Jm">
+                            <rect key="frame" x="63" y="32" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="76" id="6Sx-PG-mjr"/>
+                                <constraint firstAttribute="height" constant="76" id="us0-yH-uS2"/>
+                            </constraints>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hFG-2n-oU8">
+                            <rect key="frame" x="0.0" y="136" width="195" height="497"/>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQe-lZ-ZIJ">
+                            <rect key="frame" x="0.0" y="672" width="195" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal" title="添加自定义歌单">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="addNewMusicList:" destination="-1" eventType="touchUpInside" id="SjR-8E-KBZ"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xinxian" translatesAutoresizingMaskIntoConstraints="NO" id="mYo-hp-mkl">
+                            <rect key="frame" x="0.0" y="633" width="195" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="0IO-ez-cSV"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Tf4-wl-vwx" firstAttribute="top" secondItem="Gee-Q2-RDw" secondAttribute="top" constant="361" id="0V1-kS-rOY"/>
+                        <constraint firstItem="hFG-2n-oU8" firstAttribute="leading" secondItem="Gee-Q2-RDw" secondAttribute="leading" id="1wl-WD-iXC"/>
+                        <constraint firstItem="hFG-2n-oU8" firstAttribute="top" secondItem="BTI-Ia-eXp" secondAttribute="bottom" id="2qD-Ox-IkF"/>
+                        <constraint firstItem="mYo-hp-mkl" firstAttribute="leading" secondItem="Gee-Q2-RDw" secondAttribute="leading" id="3mW-HV-HhO"/>
+                        <constraint firstItem="BTI-Ia-eXp" firstAttribute="top" secondItem="Gee-Q2-RDw" secondAttribute="top" constant="135" id="GK2-DO-7bv"/>
+                        <constraint firstItem="mYo-hp-mkl" firstAttribute="top" secondItem="hFG-2n-oU8" secondAttribute="bottom" id="NSR-FW-Rp9"/>
+                        <constraint firstItem="Tf4-wl-vwx" firstAttribute="top" secondItem="Gee-Q2-RDw" secondAttribute="top" id="PAa-Hs-KlO"/>
+                        <constraint firstItem="Tf4-wl-vwx" firstAttribute="leading" secondItem="LQe-lZ-ZIJ" secondAttribute="trailing" id="UXo-VQ-tbJ"/>
+                        <constraint firstItem="Tf4-wl-vwx" firstAttribute="leading" secondItem="mYo-hp-mkl" secondAttribute="trailing" id="WJL-tD-dlI"/>
+                        <constraint firstItem="fxb-ig-3Jm" firstAttribute="top" secondItem="Gee-Q2-RDw" secondAttribute="top" constant="32" id="XXZ-f0-e4l"/>
+                        <constraint firstAttribute="bottom" secondItem="Tf4-wl-vwx" secondAttribute="bottom" id="dS1-cI-XW4"/>
+                        <constraint firstItem="LQe-lZ-ZIJ" firstAttribute="leading" secondItem="Gee-Q2-RDw" secondAttribute="leading" id="etb-Lu-ZNf"/>
+                        <constraint firstItem="fxb-ig-3Jm" firstAttribute="centerX" secondItem="Gee-Q2-RDw" secondAttribute="centerX" id="fLm-Qh-b12"/>
+                        <constraint firstItem="BTI-Ia-eXp" firstAttribute="leading" secondItem="Gee-Q2-RDw" secondAttribute="leading" id="gdI-9O-Ja8"/>
+                        <constraint firstAttribute="bottom" secondItem="LQe-lZ-ZIJ" secondAttribute="bottom" constant="38" id="mJd-8m-oQa"/>
+                        <constraint firstAttribute="trailing" secondItem="BTI-Ia-eXp" secondAttribute="trailing" id="os8-Kn-EgP"/>
+                        <constraint firstAttribute="trailing" secondItem="hFG-2n-oU8" secondAttribute="trailing" constant="7" id="uju-RZ-r4E"/>
+                        <constraint firstAttribute="bottom" secondItem="hFG-2n-oU8" secondAttribute="bottom" constant="115" id="v6y-AT-U1U"/>
+                        <constraint firstAttribute="trailing" secondItem="Tf4-wl-vwx" secondAttribute="trailing" id="vpA-II-OfT"/>
+                        <constraint firstAttribute="width" constant="202" id="xI0-B7-rkm"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0V1-kS-rOY"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rzV-64-0mP" secondAttribute="trailing" id="8SJ-gO-Cug"/>
+                <constraint firstItem="Gee-Q2-RDw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ct1-4e-sEI"/>
+                <constraint firstItem="Gee-Q2-RDw" firstAttribute="top" secondItem="rzV-64-0mP" secondAttribute="bottom" id="Mau-f9-S6s"/>
+                <constraint firstAttribute="bottom" secondItem="Gee-Q2-RDw" secondAttribute="bottom" id="p0w-ZJ-8eD"/>
+                <constraint firstItem="rzV-64-0mP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qie-rB-Eut"/>
+                <constraint firstItem="Gee-Q2-RDw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rvj-E9-k5O"/>
+                <constraint firstItem="rzV-64-0mP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="t4S-Xp-fif"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="rvj-E9-k5O"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-312" y="-636"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="touxiang" width="76" height="76"/>
+        <image name="touying" width="7" height="752"/>
+        <image name="xinxian" width="1" height="1"/>
+    </resources>
+</document>
